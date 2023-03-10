@@ -1,6 +1,5 @@
 {
     "configurations": [
-        
         {
             "name": "C/C++: gcc.exe build and debug active file",
             "type": "cppdbg",
@@ -25,7 +24,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc.exe compilar archivo activo"
+            "preLaunchTask": "C/C++: gcc.exe build active file"
         }
     ],
     "version": "2.0.0"
