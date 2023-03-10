@@ -21,6 +21,7 @@ int main()
 					arr[0]=y;
 					n++;
 				}
+				
 				else{
 					printf("\nNo hay espacio.");
 				}
