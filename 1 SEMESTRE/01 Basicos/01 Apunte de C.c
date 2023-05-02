@@ -1,7 +1,12 @@
                                             PROGRAMACIÓN ESTRUCTURAL EN LENGUAJE C.
+PROGRAMACIÓN. Es el proceso de escritura o codificación de un programa.
+
+PROGRAMA: Es el conjunto de sentencias o instrucciones que se le da a la computadora.
+
+
 
 • SOFTWARE:
-             Es un conjunto de sentencias o sentencias de computadoras.
+             Es un conjunto de instrucciones de programa detalladas que controlan y coordinan los componentes del hardware de una computadora y controlan las operaciones de un sistema informático.
 
 • SISTEMA OPERATIVO: 
                       Es el software de sistema que controla, gestiona o administra los recursos de la computadora.
@@ -100,9 +105,95 @@ Alto Nivel / lenguaje humano  → Bajo Nivel / Lenguaje máquina
 
     ► OPERADORES LÓGICOS.
 
+    OPERADORES DE INCREMENTO ++ / DECREMENTO --.
+
+++ INCREMENTO
+   
+   x=6;
+   y=x++;
+
+   x=6
+   y=6
+   x=7
+
+   ------
+   x=6;
+   y=++x;
+
+   x=6
+   y=7
+   x=7
+
+-- DECREMENTO
+   
+   x=6;
+   y=x--;
+
+   x=6;
+   y=6;
+   x=5;
+
+   -------
+   x=6;
+   y=--x;
+
+   x=6
+   y=5
+   x=5
+
+
     ► OPERADORES DE ASIGNACIÓN. = , →
 
-▲ SINTAXIS DE DATOS Y OPERADORES EN LENGUAJE C,
+    BLOQUE DE ASIGNACIÓN.
+    
+    La ASIGNACIÓN es una operación destructiva. Ejemplo
+
+    int a1, a2;
+    a1=10;
+    a2=a1+5;
+    a2=0;
+
+    a1 es 10 y a2 es 0
+
+
+
+    Prioridades de los operadores:
+
+    1. ()
+    2. !, ++, -- negación, incremente, decremento
+    3. * , /, %
+    4. +, -
+    5. == , !=,<, >, <= , >= operadores relacionales
+    6. && , || operadores lógicos
+    7. , coma 
+
+    coma 
+
+    y=7;
+    x=(y=2, 10);
+
+    x=9
+    x=10
+
+▲ SINTAXIS DE DATOS Y OPERADORES EN LENGUAJE C.
+
+Unidades de información.
+     
+     - Bit: es la unidad mínima de información. (binary digit).
+     - Byte: unidad fundamental de la información. 8 bits = octeto.
+     - Nibble: representa un 1/2 byte = 4 bits= cuarteto.
+     - Palabra en programación = conjunto de bytes.
+
+Unidades de medida de memoria.
+     - Celda de memoria: cada celda tiene una única dirección que indica su posición relativa en la memoria.
+     - Byte = posición de memoria de 8 bits.
+     - Dirección: a cada byte se asocia un número denominado dirección. El CONTENIDO es la información almacenada en una posición.
+
+
+
+
+
+
 
     ► TIPOS DE DATOS Y OPERADORES EN LENGUAJE C.
 
