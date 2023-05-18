@@ -13,7 +13,6 @@ Un programa final de POO con:
 -
  */
 
-//hola perro
 
 #include <iostream>
 #include <stdio.h>
@@ -27,89 +26,78 @@ class Restaurante
 	protected:
 		string mesa;
 		string alimentos;
-		string bebidas;
-
+			string bebidas;
 	public:
-		Restaurante()
-        {
+		Restaurante(){
 			this->mesa = " "; 
 			this->alimentos=" "; 
 			this->bebidas=" "; 
 		}
 		
-	
+		void setRestaurante(string m,string a, string b){
+				this->mesa=m;
+				this->alimentos=a; 
+				this->bebidas=b;
+			}
+			
 	
 };
 
-void setRestaurante(string m,string a, string b)
-    {
-		this->mesa=m;
-		this->alimentos=a; 
-		this->bebidas=b;
-	}
-		
-
-class Comensal : public Restaurante{
+class Comensal : public Restaurante
+{
     
     private:
     string cliente;
-
     public:
-    Comensal()
-    {
+    Comensal(){
         this->cliente=" ";
     }
-
-
-};
-
-
-void setComensal(string m, string a, string b, string c)
+   void setComensal(string m, string a, string b, string c)
     {
         this-> cliente=c;
         this->alimentos=a;
-		this->bebidas=b; 
-		this->mesa=m;
+				this->bebidas=b; 
+					this->mesa=m;
     }
-
-void getComensal()
-    {
+    void getComensal(){
 			cout<<"Nombre: " + this->cliente<<endl;  
 			cout<<"Mesa: " + this->mesa<<endl;
 			cout<<"alimentos: " + this->alimentos<<endl;
 				cout<<"bebidas: " + this->bebidas<<endl;
 			
     }
+};
+
+
 
 
 int main()
 {
-       do
-        {
+Comensal comensal[5]={Comensal()}; 
+int contador = 0;
+do{
 	
-		 string m,a,b,c;
+		string m,a,b,c;
 		
-		 cout << "nombre: "<<endl;
-	     getline(cin,c);
-	  	 cout << "mesa: "<<endl;
-		 getline(cin,m);
-		 cout << "alimentps: "<<endl;
-		 getline(cin,a);
-		 cout << "bebidas: "<<endl;
-		 getline(cin,b);
-		 comensal[contador].setComensal(m,a,b,c);
+		cout << "nombre: "<<endl;
+	getline(cin,c);
+		cout << "mesa: "<<endl;
+			getline(cin,m);
+			cout << "alimentps: "<<endl;
+			getline(cin,a);
+			cout << "bebidas: "<<endl;
+			getline(cin,b);
+		comensal[contador].setComensal(m,a,b,c);
 		 
 		 contador++;
-         
-         }while (contador<5);
+}while (contador<5);
 
-	     for (int i=0;i<5;i++)
-         {
+	for (int i=0;i<5;i++){
 		 comensal[i].getComensal() ;
-	     }
-          
-        }
-        Comensal comensal[5]={Comensal()};
-        int contador = 0;
+	}
+	
+
+	
+	
 
 }
