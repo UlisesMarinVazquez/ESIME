@@ -61,7 +61,7 @@ void Freestyle::Imprimir()
 main()
 {
 
-    Freestyle f1(Aczino, 34, Mexico, 1, 23.5);
+    Freestyle f1("Aczino", 34, "Mexico", 1, 23.5);
     //f1.Asignar();
     f1.Imprimir();
     //f2.Asignar(); 
