@@ -1,6 +1,4 @@
                                             PROGRAMACIÓN ESTRUCTURAL EN LENGUAJE C.
-
-
 PROGRAMACIÓN. Es el proceso de escritura o codificación de un programa.
 
 PROGRAMA: Es el conjunto de sentencias o instrucciones que se le da a la computadora.
@@ -79,12 +77,12 @@ Alto Nivel / lenguaje humano  → Bajo Nivel / Lenguaje máquina
                        
     ► OPERADORES ARITMÉTICOS.
 
-       - Suma                    +           R=A+B                     
-       - Resta                   -           R=A-B 
-       - Multiplicación         x, *         R=AxB , R=A*B 
-       - División                /           R=A/B 
-       - Modulo                  mod         R=AmodB , R=A%B 
-                                        A dividendo y B divisor
+                               - Suma                    +           R=A+B
+                               - Resta                   -           R=A-B 
+                               - Multiplicación         x, *         R=AxB , R=A*B 
+                               - División                /           R=A/B 
+                               - Modulo                  mod         R=AmodB , R=A%B 
+                                                                          A dividendo y B divisor
 
     ► OPERADORES RELACIONALES.
 
@@ -152,18 +150,10 @@ Alto Nivel / lenguaje humano  → Bajo Nivel / Lenguaje máquina
 
     int a1, a2;
     a1=10;
-    a2=a1+5;            
+    a2=a1+5;
     a2=0;
 
     a1 es 10 y a2 es 0
-
-
-
-                             a+=5    a=a+5
-                             a-=5    a=a-5
-                             a*=5    a=a*5
-                             a/=5    a=a/5
-                             a%=5    a=a%5
 
 
 
@@ -202,10 +192,10 @@ Unidades de medida de memoria.
 
 
 
+
+
+
     ► TIPOS DE DATOS Y OPERADORES EN LENGUAJE C.
-
-    DATO. Es la representación de su estado más simple por sí mismo no comunica algo (hasta asociarse).
-
 
       • TIPO DE DATO.
         
@@ -215,16 +205,12 @@ Unidades de medida de memoria.
 
           - Un tipo de DATO expresa una característica o atributo de almacenamiento en memoria que puede describir a todo un conjunto de variables utilizadas en la programación.
 
-          - Los tipos de DATOS sirven para "declarar" variables de SALIDA / ENTRADA (S/E), es decir, darlos a conocer al compilador y que este pueda utilizarlas.
+          - Los tipos de DATOS sirven para "declarar" variables de SALIDA/ENTRADA (S/E), es decir, darlos a conocer al compilador y que este pueda utilizarlas.
 
       
       • DECLARACIÓN DE VARIABLES.
 
-      Variable: Es un espacio reservado en memoria, definido por un tipo de dato y un nombre asignado, en el cual se puede guardar un valor y se puede modificar.
-      (el valor cambiará durante la ejecución de su programa).
-
-
-        Declaración de variable. Es una instanciación o alojamiento de una variable o un dato, que significa asignar un espacio en la memoria principal.
+        Es una instanciación o alojamiento de una variable o un dato, que significa asignar un espacio en la memoria principal.
 
         *instanciación: es el proceso de leer o especificar información, como los valores y el tipo de almacenamiento de un campo de datos
 
@@ -380,7 +366,7 @@ Unidades de medida de memoria.
                                             -Los dos partes constituyen los "ARGUMENTOS FORMALES"
                                             -Las variables de entradas son LOCALES y se escriben en minúscula
 
-                                            void SUMA_COMPLEJO(int a, float b, double c);
+                       void SUMA_COMPLEJO(int a, float b, double c);
 
     2. LLAMADA DE FUNCIÓN.
 
@@ -430,7 +416,7 @@ Unidades de medida de memoria.
 ▲ PASO DE ARGUMENTOS DE ENTRADA A LAS FUNCIONES DE USUARIO.
     
     1. PASO POR VALOR.
-       Sucede cuando se escribe únicamente el nomnbre de la variable de Eentrada o su tipo de dato en el prototipo o cabecera de función, en este caso el compilador crea copias de las variables originales (variables actuales) y las almacena en memoria, de esta manera existe una protección de datos.
+       Sucede cuando se escribe únicamente el nomnbre de la variable de E o su tipo de dato en el prototipo o cabecera de función, en este caso el compilador crea copias de las variables originales (variables actuales) y las almacena en memoria, de esta manera existe una protección de datos.
 
         -Prototipo  int SUMA(int, int);
 
@@ -445,9 +431,6 @@ Unidades de medida de memoria.
 
         -Cabecera   int SUMA(int &a, int &b)
 
-Recursividad.
-      
-      La recursividad es un concepto en programación en el que una función se llama a sí misma dentro de su propio cuerpo. Es una técnica muy útil para resolver problemas que requieren la repetición de un proceso hasta que se cumpla una condición de parada.
 
   
 ▲ ESTRUCTURAS DE DECISIÓN.
@@ -732,7 +715,9 @@ Recursividad.
                     .
                     .
                    }
-                                    
+                   
+                  
+
 
 
 ▲ ESTRUCTURA DE REPETICIÓN PRECONDICIONAL - FOR (por)
@@ -874,40 +859,6 @@ Recursividad.
 
   ► ARREGLOS unidimensional DE CARACTERES.
 
-for (size_t i = 0; i < count; i++)
-{
-    /* code */
-}
-
-if (/* condition */)
-{
-  /* code */
-}else
-{
-  /* code */
-}
-
-
-do
-{
-  /* code */
-} while (/* condition */);
-
-
-while (/* condition */)
-{
-  /* code */
-}
-
-switch (expression)
-{
-case /* constant-expression */:
-  /* code */
-  break;
-
-default:
-  break;
-}
 
 
 ▲ ARREGLOS BIDIMENSIONALES.
