@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 
-    int i, opcion, a, b, c, d, ;
+    int i, opcion, a, b, c, d, p;
     int n = 0;
     int array[5];
 
@@ -63,7 +63,3 @@ int main()
         }
     }
 }
-
-
-
-
