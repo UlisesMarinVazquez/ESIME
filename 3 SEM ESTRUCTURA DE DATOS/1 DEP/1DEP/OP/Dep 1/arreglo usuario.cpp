@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 
 using namespace std;
@@ -18,10 +16,10 @@ int main()
         array[i] = a;
     }
 
+    cout << "Los elementos son: \n";
     for (int i = 0; i < 3; i++)
     {
-        cout << "Los elementos son: \n"
-             << array[i];
+        cout << array[i] << " ";
     }
 
     return 0;
