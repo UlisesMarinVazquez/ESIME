@@ -1,6 +1,10 @@
 {
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "iostream": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "python.formatting.provider": "none"
 }
