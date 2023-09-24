@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -7,25 +8,37 @@ void arrayPorUsuario(int[], int);
 int main()
 {
     int b;
-    cout << "Ingresa la dimension del arreglo: \n";
-    cin >> b;
+    cout << "Ingrese la dimension del arreglo: \n";
+    while (!(cin >> b) || (b == 0))
+    {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "\nIngrese correctamente la dimension del arrreglo: \n";
+    }
+
     int array[b];
     arrayPorUsuario(array, b);
     return 0;
 }
 
-void arrayPorUsuario(int arr[], int size)
+void arrayPorUsuario(int arr[], int tamano)
 {
     int a;
-    cout << "Ingresa los elementos para el arreglo: \n";
-    for (int i = 0; i < size; i++)
+    cout << "\nIngrese los elementos para el arreglo: \n";
+
+    for (int i = 0; i < tamano; i++)
     {
-        cin >> a;
+        while (!(cin >> a))
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "\nIngrese correctamente los elementos para el arreglo: \n";
+        }
         arr[i] = a;
     }
 
-    cout << "Los elementos son: \n";
-    for (int i = 0; i < size; i++)
+    cout << "\nLos elementos son: \n";
+    for (int i = 0; i < tamano; i++)
     {
         cout << arr[i] << " ";
     }
