@@ -7,5 +7,5 @@
         "iostream": "cpp",
         "ostream": "cpp"
     },
-    "python.formatting.provider": "none"
+    "python.formatting.provider": "autopep8",
 }
