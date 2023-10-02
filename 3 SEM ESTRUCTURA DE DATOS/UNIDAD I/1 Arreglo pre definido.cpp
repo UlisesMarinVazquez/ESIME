@@ -23,3 +23,6 @@ void arrayDefinido(int arr[])
         cout << arr[i] << "\n";
     }
 }
+
+
+

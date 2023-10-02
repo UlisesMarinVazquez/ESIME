@@ -16,7 +16,7 @@ int main()
 
 void crearArreglo(int *p)
 {
-    cout << "Ingresa los elementos para el arreglo: \n";
+    cout << "Ingresa los 3 elementos para el arreglo: \n";
     int a;
     for (int i = 0; i < 3; i++)
     {

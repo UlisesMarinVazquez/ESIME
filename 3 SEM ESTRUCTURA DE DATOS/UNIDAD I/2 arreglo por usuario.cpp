@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void arrayPorUsuario(int[], int);
+void arregloPorUsuario(int[], int);
 
 int main()
 {
@@ -17,11 +17,11 @@ int main()
     }
 
     int array[b];
-    arrayPorUsuario(array, b);
+    arregloPorUsuario(array, b);
     return 0;
 }
 
-void arrayPorUsuario(int arr[], int tamano)
+void arregloPorUsuario(int arr[], int tamano)
 {
     int a;
     cout << "\nIngrese los elementos para el arreglo: \n";
